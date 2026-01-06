@@ -5,6 +5,7 @@ import iconUrl from "leaflet/dist/images/marker-icon.png";
 import iconShadowUrl from "leaflet/dist/images/marker-shadow.png";
 import { API_URL } from "../../config";
 import 'leaflet/dist/leaflet.css';
+import CloseButtonComponent from './CloseButtonComponent';
 
 function RoutesComponent({coords, setCoords}){
     var i = 0
@@ -14,12 +15,10 @@ function RoutesComponent({coords, setCoords}){
         iconSize: [12, 12],
         iconAnchor: [6, 12],
     });
-    function onCloseClick(){
-        document.getElementById("modalRoute").classList.add("hidden");
-    }
+    
     return (
         <div id='modalRoute' className='position absolute w-full h-[100vh]bg-[#151129a6] z-401 left-0 top-0'>
-            <button className='bg-red-600 mr-8 mb-8 mt-4 w-[80px] h-[30px] rounded-[8px] position absolute right-0 z-402' onClick={() => {onCloseClick()}}>Fechar</button>
+            <CloseButtonComponent/>
             <div className='flex justify-center'>
                 <MapContainer center={[-23.68595,  -46.619]} zoom={20}  className='w-full h-[100vh]'>
                     <TileLayer 
@@ -30,14 +29,18 @@ function RoutesComponent({coords, setCoords}){
                         color="red"
                     />
                     {coords.map((coord) => (
-                        <CircleMarker
-                            key={i++}
-                            center={[coord.coordinates[1], coord.coordinates[0]]}
-                            radius={1}          // controla o tamanho do ponto
-                            color="blue"        // cor da borda
-                            fillColor="blue"    // cor de preenchimento
-                            fillOpacity={1}
-                            />
+                        <CircleMarker key={i++} center={[coord.coordinates[1], coord.coordinates[0]]}
+                            radius={2} color="darkblue" fillColor="darkblue" fillOpacity={1}>
+                                <Popup offset={[0, -20]}>
+                                    <p className="mt-0 text-[10px]">
+                                        Nome: {coord.radioName}
+                                    </p>
+                                    <p className="mt-0 text-[10px]">
+                                        Última atualização: <br />
+                                        {new Date(coord.dateTime).toLocaleString("pt-BR")}
+                                    </p>
+                                </Popup>
+                        </CircleMarker>
                     ))}
 
                 </MapContainer>

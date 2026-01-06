@@ -3,21 +3,22 @@ import MapComponent from "../../Components/MapPageComponents/MapComponent"
 import RoutesComponent from '../../Components/MapPageComponents/RoutesComponent';
 
 import SelectDateModal from "../../Components/MapPageComponents/SelectDateModal";
+import SocketExample from "../../Components/Websocket";
 
 // registra com um nome simples
 
 function MapPage(){
     const token = localStorage.getItem('token');
     const [coord, setCoord] = useState([])
-    
+    const radioId = 24
     useEffect(() => {
         document.getElementById("modalRoute").classList.add("hidden");
     }, [])
     return (
         <div className="w-full h-full overflow-y-hidden">
-            <SelectDateModal coords={coord} setCoords={setCoord}/>
+            <SocketExample/>
+            <SelectDateModal radioId={radioId} setCoords={setCoord}/>
             <div className="flex">
-                <button className='bg-amber-200 w-[80px] h-[80px]' onClick={() => {}}>Rotas</button>
                 <div className=''>
                     <RoutesComponent coords={coord} setCoords={setCoord}/>
                 </div>

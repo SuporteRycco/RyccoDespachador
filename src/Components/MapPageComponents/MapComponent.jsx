@@ -67,8 +67,8 @@ function MapComponent(){
 
     return (
         <div className='h-[90vh] w-full flex justify-end items-end mt-8'>
-            <div className='h-[80vh] w-[72%] flex flex-col justify-end items-start mr-12'>
-                <MapContainer center={[-23.68595,  -46.619]} zoom={20} zoomControl={false} className='h-[80vh] w-[100%] mr-12 '>
+            <div className='h-[90vh] w-[82%] flex flex-col justify-end items-start'>
+                <MapContainer center={[-23.68595,  -46.619]} zoom={20} zoomControl={false} className='h-[90vh] w-[100%] mr-12 mb-10'>
                     <TileLayer
                         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

@@ -41,6 +41,7 @@ const Login = () => {
       const dados = datacrua
       localStorage.setItem('token', dados.data.token)
       localStorage.setItem('userName', dados.data.deviceName)
+      localStorage.setItem('aes', dados.data.aesKey)
       navigate('/Mapa')
     })
     .catch(error => {
