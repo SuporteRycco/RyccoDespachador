@@ -4,7 +4,7 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Login from './Pages/Login/Login.jsx'
 import MapPage from './Pages/MapPage/MapPage.jsx'
-import './App.css';
+import FirstPage from './Pages/FirstPage/FirstPage.jsx'
 const router = createBrowserRouter([
   {
     path: "Login",
@@ -14,6 +14,10 @@ const router = createBrowserRouter([
     path: "Mapa",
     element: <MapPage/>
   },
+  {
+    path: "FirstPage",
+    element: <FirstPage/>
+  }
 ])
 
 createRoot(document.getElementById('root')).render(
