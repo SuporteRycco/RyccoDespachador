@@ -5,9 +5,9 @@ function HeaderComponent() {
   return (
     <div className='ml-[90px] w-[1180px] h-32 flex items-center mt-[-20px]'>
       
-        <div id='logoData' className='mt-8'>
-            <img className='w-[150px] h-[55px] mb-2' src={Logo}/>
-            <label className='font-bold text-white'>15:30 Tue, Nov 04</label>
+        <div id='logoData' className='mt-2 ml-2'>
+            <img className='w-[104px] h-[38px] mb-2' src={Logo}/>
+            
         </div>
 
       <div id='userIcon' className='flex ml-10 items-center bg-[#65AD93] rounded-full h-[45px] w-[45px]'>
@@ -23,7 +23,7 @@ function HeaderComponent() {
 
       <div id='ButtonsCointainer' className='flex items-center'>
 
-        <div id='MapButton' className='group flex items-center ml-4 bg-[#65AD93] rounded-md hover:bg-white w-[119px] h-[42px] 
+        <div id='MapButton' className='group flex items-center ml-4 bg-[#65AD93] rounded-md hover:bg-white w-[114px] h-[36px] 
         text-white font-bold hover:text-[#65AD93]' >
             <svg className='ml-4 w-[25px] h-[25px] hidden group-hover:block mr-3' width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12.126 3.32795C11.648 2.42046 10.9407 1.64323 10.0692 1.06773C9.19768 0.492227 8.18989 0.136916 7.13847 0.0344627C6.66285 -0.0114876 6.18364 -0.0114876 5.70801 0.0344627C4.65662 0.136983 3.64885 0.492284 2.7773 1.06772C1.90574 1.64315 1.19836 2.42026 0.720141 3.32765C0.118472 4.48542 -0.113928 5.78874 0.0522128 7.07345C0.218354 8.35815 0.775604 9.56679 1.65378 10.5471L5.93609 15.5603C5.99523 15.6295 6.06958 15.6853 6.15378 15.7236C6.23798 15.762 6.32996 15.7818 6.42309 15.7818C6.51621 15.7818 6.60819 15.762 6.69239 15.7236C6.77659 15.6853 6.85094 15.6295 6.91008 15.5603L11.1924 10.5471C12.0706 9.56685 12.6278 8.35826 12.7939 7.0736C12.9601 5.78895 12.7277 4.48568 12.126 3.32795ZM6.42309 8.49758C5.92435 8.49758 5.43682 8.35518 5.02214 8.08838C4.60746 7.82159 4.28425 7.44238 4.09339 6.99872C3.90254 6.55506 3.8526 6.06686 3.9499 5.59587C4.04719 5.12488 4.28736 4.69225 4.64002 4.35268C4.99267 4.01312 5.44199 3.78187 5.93114 3.68819C6.42029 3.5945 6.92731 3.64258 7.38807 3.82636C7.84885 4.01013 8.24267 4.32133 8.51975 4.72062C8.79683 5.11991 8.94473 5.58934 8.94473 6.06956C8.94394 6.71328 8.67802 7.33042 8.20529 7.78559C7.73256 8.24077 7.09163 8.49683 6.42309 8.49758Z" fill="#65AD93"/>
@@ -37,7 +37,7 @@ function HeaderComponent() {
         </div>
 
 
-        <div id='AudioButton' className='group flex items-center ml-4 bg-[#65AD93] rounded-md hover:bg-white w-[119px] h-[42px] 
+        <div id='AudioButton' className='group flex items-center ml-4 bg-[#65AD93] rounded-md hover:bg-white w-[114px] h-[36px] 
         text-white font-bold hover:text-[#65AD93]' >
 
             <svg className='ml-2 mr-3 w-[25px] h-[25px] hidden group-hover:block' width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,7 +60,7 @@ function HeaderComponent() {
 
         </div>
 
-        <div id='VideoButton' className='group flex items-center ml-4 bg-[#65AD93] rounded-md hover:bg-white w-[119px] h-[42px] 
+        <div id='VideoButton' className='group flex items-center ml-4 bg-[#65AD93] rounded-md hover:bg-white w-[114px] h-[36px] 
         text-white font-bold hover:text-[#65AD93]'>
 
           <svg className='ml-2 mr-3 w-[25px] h-[25px] block group-hover:hidden' width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -74,7 +74,7 @@ function HeaderComponent() {
         </div>
 
 
-         <div id='MessageButton' className='group flex items-center ml-4 bg-[#65AD93] rounded-md hover:bg-white w-[119px] h-[42px] 
+         <div id='MessageButton' className='group flex items-center ml-4 bg-[#65AD93] rounded-md hover:bg-white w-[114px] h-[36px] 
         text-white font-bold hover:text-[#65AD93]'>
 
           <svg className='ml-2 mr-1 w-[20px] h-[20px] block group-hover:hidden' width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -89,7 +89,7 @@ function HeaderComponent() {
 
         </div>
 
-         <div id='PatrolButton' className='group flex items-center ml-4 bg-[#65AD93] rounded-md hover:bg-white w-[119px] h-[42px] 
+         <div id='PatrolButton' className='group flex items-center ml-4 bg-[#65AD93] rounded-md hover:bg-white w-[114px] h-[36px] 
         text-white font-bold hover:text-[#65AD93]'>
 
           <svg className='ml-3 mr-3 w-[25px] h-[25px] block group-hover:hidden' width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -111,7 +111,7 @@ function HeaderComponent() {
         </div>
 
 
-         <div id='HistoryButton' className='group flex items-center ml-4 bg-[#65AD93] rounded-md hover:bg-white w-[119px] h-[42px] 
+         <div id='HistoryButton' className='group flex items-center ml-4 bg-[#65AD93] rounded-md hover:bg-white w-[114px] h-[36px] 
         text-white font-bold hover:text-[#65AD93]'>
 
           <svg className='ml-3 mr-3 w-[25px] h-[25px] block group-hover:hidden' width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">

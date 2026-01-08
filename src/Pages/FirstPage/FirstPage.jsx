@@ -8,9 +8,12 @@ function FirstPage() {
     <div className="">
         
         <div>
+          
             <HeaderComponent/>
             <MapComponent/>
+          
             <LateralBarComponent/>
+        
         </div>
       
     </div>
