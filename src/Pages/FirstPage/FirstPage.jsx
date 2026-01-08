@@ -11,7 +11,6 @@ function FirstPage() {
           
             <HeaderComponent/>
             <MapComponent/>
-          
             <LateralBarComponent/>
         
         </div>

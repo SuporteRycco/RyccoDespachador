@@ -66,7 +66,7 @@ function MapComponent(){
 
 
     return (
-        <div className='h-[80%] ml-88 w-[72%] overflow-hidden rounded-3xl flex mt-[-22px]'>
+        <div className='h-[82%] ml-88 w-[72%] overflow-hidden rounded-3xl flex mt-[-22px]'>
                 <MapContainer center={[-23.68595,  -46.619]} zoom={20} zoomControl={false} className='h-[82vh]  w-[100%]'>
                     <TileLayer
                         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
