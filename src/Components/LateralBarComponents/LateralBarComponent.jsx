@@ -1,5 +1,6 @@
 import React from 'react'
 import GroupsCards from './GroupsCards'
+import PTTCardComponent from './PTTCardComponent'
 
 function LateralBarComponent() {
   return (
@@ -82,7 +83,10 @@ function LateralBarComponent() {
             <GroupsCards/>
         </div>
 
+
         <div id='PTTCardComponent' className=''>
+            
+            <PTTCardComponent/>
 
         </div>
       
